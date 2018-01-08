@@ -1,11 +1,83 @@
-#container {
-	width: 360px;
-	border: 2px solid gray;
-	margin: 0 auto;
+body {
+	font-family: 'Roboto', sans-serif;
+	/*color gradient found from uigradients.com*/
+	background: #000046;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+h1 {
+	background-color: #1CB5E0;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+input {
+	padding: 13px 13px 13px 20px;
+	background-color: #f7f7f7;
+	width: 100%;
+	font-size: 18px;
+	box-sizing: border-box;    /*makes the input box fit perfectly in the whole box*/
+	color: #1CB5E0;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+span {
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	color: white;
+	text-align: center;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+input:focus{
+	background-color: white;
+	border: 3px solid #1CB5E0;
+	outline: none;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}
+
+li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+.fa-plus {
+	float: right;
 }
 
 .completed {
 	color: gray;
 	text-decoration: line-through;
 }
+
+#container {
+	width: 360px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	margin: 100px auto;
+	background-color: #f7f7f7;
+}
+
