@@ -11,11 +11,15 @@ var quotesData = {
 	}
 }
 
-
-
-$("#new").on("click", function() {
+function generateQuote() {
 	var random=Math.ceil(Math.random()*2);
-	$("h1").text(quotesData[random].quotes);
+	$("h1").text('"   '+quotesData[random].quotes);
 	$("span").text(quotesData[random].author);
 	$("body").css("backgroundColor" , quotesData[random].color);
+}
+
+generateQuote();
+
+$("#new").on("click", function() {
+	generateQuote();
 });
