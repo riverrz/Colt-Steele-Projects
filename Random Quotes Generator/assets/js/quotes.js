@@ -21,8 +21,10 @@ function generateQuote() {
 	responsiveVoice.speak("By "+quotesData[random].author);
 }
 
+// Quotes when the page loads
 generateQuote();
 
+// Generating quotes when the button is clicked
 $("#new").on("click", function() {
 	generateQuote();
 });

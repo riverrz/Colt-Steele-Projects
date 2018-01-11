@@ -2,6 +2,7 @@ body {
 	background-color: black;
 	height: 100%;
 	margin: 0;
+	width: 100%;
 	transition: all 1s;
 }
 h1 {
@@ -24,6 +25,7 @@ a {
 	margin-right: 5px;
 	width: 10%;
 	border-radius: 50%;
+	margin-bottom: 2px;
 }
 
 button {
@@ -36,11 +38,11 @@ button {
 }
 
 #container {
-	 width: 25%;
-	 background-color: white;
-	 margin: 15% auto;
-	 padding: 2% 2%;
-	 text-align: center;
+	width: 25%;
+	background-color: white;
+	margin: 15% auto;
+	padding: 2% 2%;
+	text-align: center;
 }
 
 #commands {
